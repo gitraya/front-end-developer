@@ -1,0 +1,108 @@
+:root {
+  --noto-sans-jp: 'Noto Sans JP', sans-serif;
+  --cl-hover: #333333;
+  --cl-ph: #828282;
+  --cl-focus: #2962ff;
+  --cl-error: #d32f2f;
+}
+/* Fullwidth style */
+.fullWidth,
+.fullWidth .input-wrap,
+.fullWidth .input {
+  width: 100% !important;
+}
+/* Container style */
+.input-control {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+/* Label style */
+.label,
+.helperText {
+  margin: 0.3rem 0;
+  font-family: var(--noto-sans-jp);
+  color: var(--cl-hover);
+}
+/* Helper text styled */
+.helperText {
+  font-size: 0.625rem;
+  color: var(--cl-ph);
+}
+/* Input styling */
+.input-wrap {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+.input {
+  font-family: var(--noto-sans-jp);
+  color: var(--cl-hover);
+  border: 1px solid var(--cl-ph);
+  border-radius: 8px;
+}
+/* Input when disabled */
+.input:disabled {
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+}
+.input:disabled:hover {
+  border: 1px solid #e0e0e0;
+}
+/* Error mode */
+.input-control.error .label,
+.input-control.error .helperText,
+.input-control.error .icon {
+  color: var(--cl-error);
+}
+/* Hover state */
+.input-control:hover .helperText,
+.input-control:hover .icon,
+.input-control.error:hover .label,
+.input-control.error:hover .helperText,
+.input-control.error:hover .icon {
+  color: var(--cl-hover);
+}
+/* Focus state */
+.input-control:focus-within .label,
+.input-control:focus-within .helperText,
+.input-control:focus-within .icon {
+  color: var(--cl-focus);
+}
+/* Focus state in error mode */
+.input-control.error:focus-within .label,
+.input-control.error:focus-within .helperText,
+.input-control.error:focus-within .icon {
+  color: var(--cl-error);
+}
+/* Change border style when hover or focused */
+.input:hover,
+.input-control.error:hover .input {
+  border: 1.5px solid var(--cl-hover);
+}
+.input:focus {
+  outline: none !important;
+  border: 1.5px solid var(--cl-focus);
+}
+.input-control.error .input {
+  border: 1px solid var(--cl-error);
+}
+.input-control.error:focus-within .input {
+  border: 1.5px solid var(--cl-error);
+}
+/* Is icon there style */
+.icon {
+  position: absolute;
+  color: var(--cl-ph);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-icon .input {
+  padding-left: 45px !important;
+}
+.icon.startIcon {
+  left: 12px;
+}
+.icon.endIcon {
+  right: 12px;
+}

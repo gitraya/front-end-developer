@@ -1,0 +1,91 @@
+:root {
+  --ubuntu-mono: 'Ubuntu Mono', monospace;
+  --poppins: 'Poppins', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --noto-sans-jp: 'Noto Sans JP', sans-serif;
+  --gray-two: #4f4f4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+header,
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100%;
+  margin: 0 10%;
+}
+
+.cl-hover {
+  color: #828282;
+}
+.cl-gytwo {
+  color: var(--gray-two);
+}
+.ft-poppins {
+  font-family: var(--poppins);
+}
+.ft-ns-jp {
+  font-family: var(--noto-sans-jp);
+}
+.ft-500 {
+  font-weight: 500;
+}
+.ft-600 {
+  font-weight: 600;
+}
+
+.logo-devchallenges {
+  font-size: 1.5rem;
+}
+
+/* Main content style */
+.demo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.demo-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.demo-item.full {
+  width: 100%;
+  margin-right: 0;
+}
+
+small {
+  font-family: var(--ubuntu-mono);
+  margin: 0.5rem 0;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  max-width: 100%;
+  margin: 2rem auto;
+  font-family: var(--montserrat);
+  text-align: center;
+  font-weight: 400;
+  color: #bdbdbd;
+}
+.copyright a {
+  color: #333333;
+  text-decoration: none;
+}
