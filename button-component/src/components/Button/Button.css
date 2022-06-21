@@ -1,0 +1,135 @@
+:root {
+  --cl-def: #3f3f3f;
+  --bg-def: #e0e0e0;
+  --bg-pri: #2962ff;
+  --bg-sec: #455a64;
+  --bg-dag: #d32f2f;
+}
+
+/* Button style */
+.button {
+  max-width: fit-content;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+  border: none;
+  border-radius: 6px;
+}
+
+/* Color style */
+.default {
+  color: var(--cl-def);
+  background: var(--bg-def);
+}
+.primary {
+  color: #fff;
+  background: var(--bg-pri);
+}
+.secondary {
+  color: #fff;
+  background: var(--bg-sec);
+}
+.danger {
+  color: #fff;
+  background: var(--bg-dag);
+}
+
+/* Color on hover or focus */
+.default:hover,
+.default:focus {
+  background: #aeaeae;
+}
+.primary:hover,
+.primary:focus {
+  background: #0039cb;
+}
+.secondary:hover,
+.secondary:focus {
+  background: #1c313a;
+}
+.danger:hover,
+.danger:focus {
+  background: #9a0007;
+}
+
+/* Variant styling */
+.outline {
+  border: 1px solid;
+  box-shadow: none;
+  background: #fff;
+}
+.outline:hover,
+.outline:focus,
+.text:hover,
+.text:focus {
+  background: rgba(41, 98, 255, 0.1);
+}
+.outline.default,
+.text.default {
+  color: var(--bg-def);
+  border-color: var(--bg-def);
+}
+.outline.primary,
+.text.primary {
+  color: var(--bg-pri);
+  border-color: var(--bg-pri);
+}
+.outline.secondary,
+.text.secondary {
+  color: var(--bg-sec);
+  border-color: var(--bg-sec);
+}
+.outline.danger,
+.text.danger {
+  color: var(--bg-dag);
+  border-color: var(--bg-dag);
+}
+.text {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* Disabled shadow property */
+.disableShadow {
+  box-shadow: none;
+}
+
+/* Button disabled */
+.button:disabled {
+  cursor: default;
+  color: #9e9e9e;
+  box-shadow: none;
+  background: var(--bg-def);
+}
+.button.text:disabled {
+  cursor: default;
+  color: #9e9e9e;
+  box-shadow: none;
+  background: none;
+}
+
+/* Icon styling */
+.startIcon {
+  margin-right: 0.5rem;
+}
+.endIcon {
+  margin-left: 0.5rem;
+}
+
+/* Maybe deleted later */
+.hovdef {
+  background: #aeaeae;
+}
+.hovpri {
+  background: #0039cb;
+}
+.hovsec {
+  background: #1c313a;
+}
+.hovdag {
+  background: #9a0007;
+}
+.hovout,
+.hovtex {
+  background: rgba(41, 98, 255, 0.1);
+}

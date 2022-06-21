@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/button-component/static/css/main.949b1d1c.chunk.css",
+    "main.js": "/button-component/static/js/main.c12a816b.chunk.js",
+    "main.js.map": "/button-component/static/js/main.c12a816b.chunk.js.map",
+    "runtime-main.js": "/button-component/static/js/runtime-main.cb8106a0.js",
+    "runtime-main.js.map": "/button-component/static/js/runtime-main.cb8106a0.js.map",
+    "static/js/2.c51f14c6.chunk.js": "/button-component/static/js/2.c51f14c6.chunk.js",
+    "static/js/2.c51f14c6.chunk.js.map": "/button-component/static/js/2.c51f14c6.chunk.js.map",
+    "index.html": "/button-component/index.html",
+    "static/css/main.949b1d1c.chunk.css.map": "/button-component/static/css/main.949b1d1c.chunk.css.map",
+    "static/js/2.c51f14c6.chunk.js.LICENSE.txt": "/button-component/static/js/2.c51f14c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb8106a0.js",
+    "static/js/2.c51f14c6.chunk.js",
+    "static/css/main.949b1d1c.chunk.css",
+    "static/js/main.c12a816b.chunk.js"
+  ]
+}
