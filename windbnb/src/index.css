@@ -1,0 +1,132 @@
+:root {
+  --mulish: "Mulish", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --red: #eb5757;
+  --gray-very-light: #bdbdbd;
+  --gray-light: #828282;
+  --gray-very-dark: #333333;
+  --gray-dark: #4f4f4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+  font-family: var(--montserrat);
+  color: var(--gray-very-dark);
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header,
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100%;
+  margin: 0 5%;
+}
+
+/* Header styling */
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main styling */
+/* Main header style */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.main-header small {
+  margin: 0;
+  color: var(--gray-dark);
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.copyright {
+  max-width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  font-weight: 400;
+  color: var(--gray-light);
+}
+.copyright a {
+  color: var(--gray-very-dark);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header,
+  main {
+    margin: 0 2.5%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header,
+  main {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    height: auto;
+    padding: 1.5rem 0 1rem;
+    flex-direction: column;
+  }
+  nav > div:nth-child(1) {
+    margin-right: auto;
+  }
+  .search-form-container {
+    margin: 1.5rem auto auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header,
+  main {
+    margin: 0 3.5%;
+  }
+  .search-form-container {
+    width: 80%;
+  }
+  .search-input {
+    width: 40%;
+  }
+  .search-input:nth-child(3) {
+    width: auto;
+  }
+}
+
+.button-style-none {
+  border: none;
+  background: none;
+  padding: 0px;
+  cursor: pointer;
+}
