@@ -1,0 +1,23 @@
+{
+  "name": "front-end-developer",
+  "version": "1.0.0",
+  "description": "Front-end Developer Challenges - https://devchallenges.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitraya/front-end-developer.git"
+  },
+  "author": "mail.raya15@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitraya/front-end-developer/issues"
+  },
+  "homepage": "https://github.com/gitraya/front-end-developer#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
