@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@100;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.loadAll {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  color: #e7e7eb;
+  background: #100e1d6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* mobile device */
+@media screen and (max-width: 540px) {
+  .App {
+    flex-direction: column;
+  }
+}
