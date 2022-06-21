@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8%;
+  background: #f6f7fb;
+}
+
+@media screen and (min-width: 1800px) {
+  .App {
+    padding: 0px 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    padding: 0px 5%;
+  }
+}
+
+.load-animation {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: #334680;
+}
+
+.not-found {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0px;
+  color: #334680;
+}
+
+/* logo style */
+.app-logo {
+  margin: 2rem 0px;
+}
+.app-logo span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #282538;
+}
+.app-logo span:nth-of-type(1) {
+  font-weight: 700;
+}
+.app-logo span:nth-of-type(2) {
+  font-weight: 300;
+}
+/* logo style */
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-areas:
+    'search search'
+    'aside main';
+  gap: 1.5rem 2rem;
+}
+@media screen and (max-width: 850px) {
+  main {
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 3.5fr 6.5fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .App {
+    padding: 0px 3%;
+  }
+  main {
+    grid-template-columns: 3fr 7fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  main {
+    grid-template-areas:
+      'search search'
+      'aside aside'
+      'main main';
+    gap: 0.75rem;
+  }
+  .load-animation {
+    margin: 2.5rem auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .app-logo {
+    margin-top: 1rem;
+  }
+  main {
+    gap: 0.25rem;
+  }
+}
+
+aside {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+}

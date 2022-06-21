@@ -1,0 +1,133 @@
+/* filter section style */
+.filter-section {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+}
+
+/* filter fulltime style */
+.filter__fulltime form {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.filter__fulltime form input {
+  width: 18px;
+  height: 18px;
+  margin: 0px 10px 0px 12px;
+  border: 1px solid #b9bdcf;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.filter__fulltime form label {
+  font-size: 0.875rem;
+  color: #334680;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* search location style */
+.filter__search-location {
+  padding: 0.5rem 0px;
+  display: flex;
+  flex-direction: column;
+}
+.filter__search-location label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #b9bdcf;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.input-control.location {
+  margin-top: 0.875rem;
+}
+.input-control.location i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b9bdcf;
+  font-size: 1.2rem;
+}
+.input-control.location input {
+  width: 100%;
+  color: #282538;
+  border: 2px solid #fff;
+  padding: 18px 14px 18px 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.input-control.location input:focus {
+  outline: none !important;
+  border-color: #334680;
+}
+.input-control.location input::placeholder {
+  color: #b9bdcf;
+}
+
+/* filter location style */
+.filter__location {
+  padding: 1rem 0px;
+}
+.filter__location form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+.radio-group {
+  display: flex;
+}
+.radio-group input {
+  width: 18px;
+  height: 18px;
+  margin: 0px 12px;
+}
+.radio-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334680;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .filter-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+      'a c'
+      'b c';
+    gap: 0px 1rem;
+  }
+  .filter__fulltime {
+    grid-area: a;
+  }
+  .filter__search-location {
+    grid-area: b;
+  }
+  .filter__location {
+    grid-area: c;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filter-section {
+    display: flex;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-template-areas: none;
+    gap: unset;
+  }
+  .filter__fulltime,
+  .filter__search-location {
+    grid-area: unset;
+  }
+  .filter__location {
+    grid-area: unset;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
