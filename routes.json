@@ -1,1 +1,7 @@
-["button-component", "input-component", "windbnb", "todo-app"]
+[
+  "button-component",
+  "input-component",
+  "windbnb",
+  "todo-app",
+  "random-quote-generator"
+]
