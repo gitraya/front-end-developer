@@ -30,7 +30,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/gitraya/front-end-developer/tree/master/button-component/blob/main/public/images/overviewbuttoncomponents.png)
+![screenshot](https://github.com/gitraya/front-end-developer/blob/master/button-component/public/images/overviewbuttoncomponents.png)
 
 ## Built With
 
