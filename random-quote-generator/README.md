@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://front-end-developer.herokuapp.com/random-quote-generator">
+    <a href="https://front-end-developer-gitraya.onrender.com/random-quote-generator">
       Demo
     </a>
     <span> | </span>

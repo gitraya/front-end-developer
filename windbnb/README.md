@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://front-end-developer.herokuapp.com/windbnb">
+    <a href="https://front-end-developer-gitraya.onrender.com/windbnb">
       Demo
     </a>
     <span> | </span>

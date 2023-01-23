@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://front-end-developer.herokuapp.com/country-quiz">
+    <a href="https://front-end-developer-gitraya.onrender.com/country-quiz">
       Demo
     </a>
     <span> | </span>

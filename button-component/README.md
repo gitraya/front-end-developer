@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://front-end-developer.herokuapp.com/button-component">
+    <a href="https://front-end-developer-gitraya.onrender.com/button-component">
       Demo
     </a>
     <span> | </span>
